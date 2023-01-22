@@ -1,4 +1,4 @@
-import express, { Express, json, Request, Response } from 'express'
+import express, { Express, json } from 'express'
 import dotenv from 'dotenv'
 import TelegramBot from 'node-telegram-bot-api'
 import router from './router'
