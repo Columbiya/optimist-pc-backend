@@ -11,9 +11,9 @@ class RequestsController {
             return
         }
 
-        console.log(process.env.channelId)
+        console.log(process.env.CHANNEL_ID)
 
-        bot.sendMessage(process.env.channelId as string, text)
+        bot.sendMessage(process.env.CHANNEL_ID as string, text)
         res.status(200).json({status: true})
     }
 }

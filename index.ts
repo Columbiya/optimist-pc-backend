@@ -12,7 +12,7 @@ app.use(json())
 app.use("/api", router)
 
 const port = 5000
-const token = process.env.token
+const token = process.env.TOKEN
 
 export const bot = new TelegramBot(token ? token: "", {polling: true})
 
